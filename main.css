@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(60, 60, 60);
+    display: block;
+    color: #feffff;
+  }
+  .banner{
+    font-size: 48px;
+    text-align: center;
+    color: yellow;
+    background-image: url(https://wallpaper-house.com/data/out/9/wallpaper2you_362622.jpg);
+  }
+  h1, h2, h3, h4, h5 {
+    color: pink;
+    font-family: verdana;
+    font-size: 150%;
+  }
+  p {
+    font-family: courier;
+    color: rgb(187, 187, 240);
+  }
+  
+  nav {
+    float: left;
+    width: 100%;
+    height: 50px; /* only for demonstration, should be removed */
+
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+  
+    position: sticky; 
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    cursor: pointer;
+    
+  }
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  nav li {
+    float: left;
+    color: aliceblue;
+  }
+
+  #requirements li{
+    color:aliceblue;
+  }
+
+  table { 
+    color: aquamarine;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+   a:link, a:visited{
+    color: #feffff;
+  }
+ 
+  #submission img[src="planets.jpeg"] {
+    display: block;
+    margin: auto;
+  }
+
+  #task img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .name{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer{
+    display: flex;
+  }
+
+  iframe{
+    width: 200px;
+  }
+
+  footer div{
+    margin: 20px;
+  }
+
+  .categories ul{
+    columns: 2;
+  }
