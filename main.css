@@ -22,7 +22,7 @@ body {
   nav {
     float: left;
     width: 100%;
-    height: 50px; /* only for demonstration, should be removed */
+    /* height: 50px; only for demonstration, should be removed */
 
     padding: 10px;
     list-style-type: none;
@@ -36,6 +36,7 @@ body {
     
   }
   nav ul{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,6 +47,14 @@ body {
   nav li {
     float: left;
     color: aliceblue;
+    display: flex;
+  }
+
+
+
+  .logo img {
+    width: 60px;
+    height: 60px;
   }
 
   #requirements li{
@@ -57,7 +66,7 @@ body {
   }
   
   .menu li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 14px;
@@ -90,7 +99,7 @@ body {
   }
 
   footer{
-    display: flex;
+    display: inline;
   }
 
   iframe{
@@ -104,3 +113,88 @@ body {
   .categories ul{
     columns: 2;
   }
+
+  @media (max-width: 850px) {
+   
+    .banner img {
+      flex: auto;
+      max-width: fit-content;
+      max-height: fit-content;
+    }
+  
+    a img {
+      flex: auto;
+      max-width: max-content;
+      max-height: max-content;
+    }
+
+    nav {
+      position: static;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    body {
+      background-color: black;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .menu li {
+      align-self: center;
+    }
+
+    .menu li a {
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    nav {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .menu ul {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .menu a {
+      display: flex;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    footer {
+      padding: 0;
+      margin: 0;
+    }
+
+    #task img {
+      width: 100%;
+      margin-left: 0;
+      object-fit: cover;
+    }
+    
+    .info img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+   
+  
+  }
+  
